@@ -1,0 +1,210 @@
+/* Estilização do header */
+header {
+    background-color: #000000;
+    color: rgb(202, 202, 202);
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 122%; /* Ajuste a largura do header para mesmo tamanho da section "sobre" */
+    box-sizing: border-box; 
+}
+
+/* Estilização geral do body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient();
+    background-color: #000000;
+    color: #333;
+}
+
+/* Barra lateral (sidebar) */
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: #000000;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 5;
+    padding: 1%;
+}
+
+/* Container do logo e informações pessoais */
+.logocontent {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    margin-bottom: 5%;
+}
+.nome {
+    color: rgb(202, 202, 202);
+    font-size: 25px;
+}
+.idade, .genero {
+    color: rgb(202, 202, 202);
+    font-size: 20px;
+}
+.logocontent img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.maindiv {
+    display: flex;
+}
+.sidebar nav {
+    height: 70%;
+}
+.sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+}
+.sidebar nav ul li {
+    display: inline;
+    margin: 5px;
+    background-color: #000000;
+    border-radius: 5%;
+    padding: 30px;
+    transition: 100ms;
+    cursor: pointer;
+}
+.sidebar nav ul li a {
+    color:rgb(202, 202, 202);
+    text-decoration: none;
+}
+.sidebar nav ul li:hover{
+    transform: scale(1.1);
+    background-color: #7339be;
+}
+.sidebar nav ul li.ativo {
+    background-color: #7339be;
+}
+
+/* Estilo para os textos e imagens dos hobbies e imagens */
+.hobbies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.hobby {
+    text-align: center;
+    margin: 10px;
+    font-size: 11px;
+}
+.hobby img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+.hobby p {
+    margin-top: 10px;
+    font-weight:lighter;
+}
+
+/* Estilo geral das seções */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 70%;
+    display: none;
+    color: rgb(202, 202, 202);
+    background: linear-gradient(to right,#000000,#7339be);
+}
+
+section:not(.ocultar) {
+    display: block;
+}
+
+/* Centralizando textos e imagem do portfólio */
+#sobre {
+    text-align: center;
+}
+
+#portfolio {
+    text-align: center;
+}
+
+#portfolio img {
+    max-width: 20%;
+    height: auto; 
+    border-radius: 13%;
+}
+
+/* Estilo das redes sociais */
+.redessociais{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 5%;
+}
+.linkedin,.whatsapp,.instagram,.email{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.linkedin{
+    background:url(linkedin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.whatsapp{
+    background:url(whatsapp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.instagram{
+    background:url(instagram.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilo da mensagem de submit */
+#mensagem-enviada {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    color: rgb(202, 202, 202);
+    background: linear-gradient(to right,#000000,#7339be);
+}
